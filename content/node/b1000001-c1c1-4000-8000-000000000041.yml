@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1000001-c1c1-4000-8000-000000000041
+  bundle: news
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Water main work on Oak Street'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/2026-09/water-main-work-oak-street
+      langcode: en
+  field_description:
+    -
+      value: 'Nights, Sept 14–16. Lanes east of 4th.'
+  field_content:
+    -
+      value: '<p>Public Works is replacing a main on Oak between 4th and 7th. 8 p.m. to 5 a.m. We will try to keep driveways open. Expect noise. Posted 9/8.</p>'
+      format: content_format

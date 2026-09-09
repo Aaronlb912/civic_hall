@@ -1,0 +1,105 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.system_breadcrumb_block
+    - canvas.component.sdc.mercury.button
+    - canvas.component.sdc.mercury.heading
+    - canvas.component.sdc.mercury.section
+    - canvas.component.sdc.mercury.text
+    - core.entity_view_mode.node.full
+    - field.field.node.resident_task.field_content
+    - field.field.node.resident_task.field_description
+    - field.field.node.resident_task.field_task_link
+    - filter.format.content_format
+    - node.type.resident_task
+  module:
+    - node
+    - options
+id: node.resident_task.full
+content_entity_type_id: node
+content_entity_type_bundle: resident_task
+content_entity_type_view_mode: full
+component_tree:
+  a061141e-ebaf-4062-b50d-869b64e6cfb8:
+    uuid: a061141e-ebaf-4062-b50d-869b64e6cfb8
+    component_id: block.system_breadcrumb_block
+    component_version: 0d7e961dd03aa710
+    inputs:
+      label: Breadcrumbs
+      label_display: '0'
+  027d2e42-68f5-4466-bfc8-317684407a90:
+    uuid: 027d2e42-68f5-4466-bfc8-317684407a90
+    component_id: sdc.mercury.section
+    component_version: a917d5c9be8f2830
+    inputs:
+      width: 75%
+      columns: '100'
+      mobile_columns: '1'
+      margin_block_start: '32'
+      margin_block_end: '64'
+      padding_block_start: '0'
+      padding_block_end: '0'
+      section_header: true
+      section_footer: false
+  1f68f737-97b7-4c3f-afba-1ffe1763e5ff:
+    parent_uuid: 027d2e42-68f5-4466-bfc8-317684407a90
+    slot: header_slot
+    uuid: 1f68f737-97b7-4c3f-afba-1ffe1763e5ff
+    component_id: sdc.mercury.heading
+    component_version: 9ba4baa1476e5856
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:resident_task␝title␞␟value'
+      level: 1
+      text_size: default
+      text_color: default
+      align: left
+  902e69be-b8c1-49a5-a941-4872cea63d7c:
+    parent_uuid: 027d2e42-68f5-4466-bfc8-317684407a90
+    slot: main_slot
+    uuid: 902e69be-b8c1-49a5-a941-4872cea63d7c
+    component_id: sdc.mercury.heading
+    component_version: 9ba4baa1476e5856
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:resident_task␝field_description␞␟value'
+      level: 2
+      text_size: heading-responsive-xl
+      text_color: default
+      align: left
+  5b132e40-3199-4fde-bdbe-a9f4533636ce:
+    parent_uuid: 027d2e42-68f5-4466-bfc8-317684407a90
+    slot: main_slot
+    uuid: 5b132e40-3199-4fde-bdbe-a9f4533636ce
+    component_id: sdc.mercury.text
+    component_version: 16c79c28a4108f9b
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:resident_task␝field_content␞␟processed'
+      text_size: normal
+      text_color: default
+  5a88ba52-06a5-4234-979f-7e7f2b4d7184:
+    parent_uuid: 027d2e42-68f5-4466-bfc8-317684407a90
+    slot: main_slot
+    uuid: 5a88ba52-06a5-4234-979f-7e7f2b4d7184
+    component_id: sdc.mercury.button
+    component_version: 0ca665b3987e81dd
+    inputs:
+      variant: primary
+      label:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:resident_task␝field_task_link␞␟title'
+      href:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:resident_task␝field_task_link␞␟uri'
+      size: medium
+      icon: arrow-right
+      mobile_width: false
+      icon_first: false
+      disabled: false
+exposed_slots: {  }
+page_variant: null

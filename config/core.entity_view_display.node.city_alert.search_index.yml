@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.city_alert.field_alert_severity
+    - field.field.node.city_alert.field_content
+    - field.field.node.city_alert.field_description
+    - node.type.city_alert
+  module:
+    - options
+    - text
+    - user
+id: node.city_alert.search_index
+targetEntityType: node
+bundle: city_alert
+mode: search_index
+content:
+  field_alert_severity:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  content_moderation_control: true
+  links: true
+  search_api_excerpt: true

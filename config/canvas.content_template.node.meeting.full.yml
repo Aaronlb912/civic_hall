@@ -1,0 +1,84 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.system_breadcrumb_block
+    - canvas.component.sdc.mercury.heading
+    - canvas.component.sdc.mercury.section
+    - canvas.component.sdc.mercury.text
+    - core.entity_view_mode.node.full
+    - field.field.node.meeting.field_content
+    - field.field.node.meeting.field_description
+    - filter.format.content_format
+    - node.type.meeting
+  module:
+    - node
+    - options
+id: node.meeting.full
+content_entity_type_id: node
+content_entity_type_bundle: meeting
+content_entity_type_view_mode: full
+component_tree:
+  1f0200ce-94b1-4e6f-b211-7da54ababbbe:
+    uuid: 1f0200ce-94b1-4e6f-b211-7da54ababbbe
+    component_id: block.system_breadcrumb_block
+    component_version: 0d7e961dd03aa710
+    inputs:
+      label: Breadcrumbs
+      label_display: '0'
+  994be44f-de6a-46d8-ad32-69c494f40c2b:
+    uuid: 994be44f-de6a-46d8-ad32-69c494f40c2b
+    component_id: sdc.mercury.section
+    component_version: a917d5c9be8f2830
+    inputs:
+      width: 75%
+      columns: '100'
+      mobile_columns: '1'
+      margin_block_start: '32'
+      margin_block_end: '64'
+      padding_block_start: '0'
+      padding_block_end: '0'
+      section_header: true
+      section_footer: false
+  a3e11613-d8b2-4d9c-984c-49614bf0675c:
+    parent_uuid: 994be44f-de6a-46d8-ad32-69c494f40c2b
+    slot: header_slot
+    uuid: a3e11613-d8b2-4d9c-984c-49614bf0675c
+    component_id: sdc.mercury.heading
+    component_version: 9ba4baa1476e5856
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:meeting␝title␞␟value'
+      level: 1
+      text_size: default
+      text_color: default
+      align: left
+  62d2be5c-f4b2-4268-a7e3-d16fcebb385c:
+    parent_uuid: 994be44f-de6a-46d8-ad32-69c494f40c2b
+    slot: main_slot
+    uuid: 62d2be5c-f4b2-4268-a7e3-d16fcebb385c
+    component_id: sdc.mercury.heading
+    component_version: 9ba4baa1476e5856
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:meeting␝field_description␞␟value'
+      level: 2
+      text_size: heading-responsive-xl
+      text_color: default
+      align: left
+  de8cfbd1-3e9c-4f5a-a1b6-475bc5856ca8:
+    parent_uuid: 994be44f-de6a-46d8-ad32-69c494f40c2b
+    slot: main_slot
+    uuid: de8cfbd1-3e9c-4f5a-a1b6-475bc5856ca8
+    component_id: sdc.mercury.text
+    component_version: 16c79c28a4108f9b
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:meeting␝field_content␞␟processed'
+      text_size: normal
+      text_color: default
+exposed_slots: {  }
+page_variant: null

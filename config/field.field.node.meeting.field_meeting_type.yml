@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_type
+    - node.type.meeting
+  module:
+    - options
+id: node.meeting.field_meeting_type
+field_name: field_meeting_type
+entity_type: node
+bundle: meeting
+label: 'Meeting body'
+description: 'The public body holding the meeting.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

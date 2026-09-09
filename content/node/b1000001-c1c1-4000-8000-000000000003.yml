@@ -1,0 +1,51 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1000001-c1c1-4000-8000-000000000003
+  bundle: department
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Parks and Recreation'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /departments/parks-and-recreation
+      langcode: en
+  field_description:
+    -
+      value: 'Rec center, park rentals, youth sports.'
+  field_content:
+    -
+      value: '<p>Shelter rentals are on the first of the month for the following month. The pool is closed Mondays for cleaning. See News for the fall hours.</p>'
+      format: content_format
+  field_phone:
+    -
+      value: '(555) 555-0140'
+  field_email:
+    -
+      value: parks@mapleridge.example
+  field_hours:
+    -
+      value: 'Monday-Friday, 9:00 a.m. to 5:00 p.m.'

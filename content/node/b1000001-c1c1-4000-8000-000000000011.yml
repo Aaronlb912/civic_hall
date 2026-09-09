@@ -1,0 +1,51 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1000001-c1c1-4000-8000-000000000011
+  bundle: official
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Elena Vasquez'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /officials/elena-vasquez
+      langcode: en
+  field_description:
+    -
+      value: 'Mayor of Maple Ridge.'
+  field_content:
+    -
+      value: '<p>Office hours Tuesday 1–4, City Hall second floor. Call the Clerk if you need a different time. Regional meetings are posted on the calendar when we have them.</p>'
+      format: content_format
+  field_role:
+    -
+      value: Mayor
+  field_email:
+    -
+      value: mayor@mapleridge.example
+  field_phone:
+    -
+      value: '(555) 555-0101'

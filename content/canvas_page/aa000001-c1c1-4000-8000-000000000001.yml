@@ -1,0 +1,78 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: aa000001-c1c1-4000-8000-000000000001
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 0
+  title:
+    -
+      value: Government
+  components:
+    -
+      uuid: a4444444-c1c1-4000-8000-000000000001
+      component_id: sdc.mercury.section
+      inputs:
+        columns: 50-50
+        mobile_columns: '1'
+        width: 100%
+        margin_block_start: '48'
+        margin_block_end: '64'
+        padding_block_start: '0'
+        padding_block_end: '0'
+        section_header: true
+        section_footer: false
+    -
+      parent_uuid: a4444444-c1c1-4000-8000-000000000001
+      slot: header_slot
+      uuid: a4444444-c1c1-4000-8000-000000000002
+      component_id: sdc.mercury.heading
+      inputs:
+        heading_text: Government
+        level: 1
+        text_size: default
+        text_color: default
+        align: left
+    -
+      parent_uuid: a4444444-c1c1-4000-8000-000000000001
+      slot: main_slot
+      uuid: a4444444-c1c1-4000-8000-000000000003
+      component_id: sdc.mercury.card
+      inputs:
+        heading_text: Departments
+        level: 3
+        url: /departments
+        orientation: vertical
+        style: framed
+        text: 'Clerk, Public Works, Parks. Hours and phone numbers on each page.'
+        is_text_centered: false
+        background: default
+    -
+      parent_uuid: a4444444-c1c1-4000-8000-000000000001
+      slot: main_slot
+      uuid: a4444444-c1c1-4000-8000-000000000004
+      component_id: sdc.mercury.card
+      inputs:
+        heading_text: 'Mayor & Council'
+        level: 3
+        url: /officials
+        orientation: vertical
+        style: framed
+        text: 'Mayor Vasquez, Council President Hale, Ward 2.'
+        is_text_centered: false
+        background: default
+  path:
+    -
+      alias: /government
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true
+  metatags:
+    -
+      value: '{"canonical_url":"[canvas_page:url]","description":"[canvas_page:description]","image_src":"[canvas_page:image:entity:field_media_image:entity:url]","title":"[canvas_page:title] | [site:name]"}'

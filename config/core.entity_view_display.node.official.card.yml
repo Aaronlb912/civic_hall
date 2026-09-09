@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.official.field_content
+    - field.field.node.official.field_description
+    - field.field.node.official.field_email
+    - field.field.node.official.field_featured_image
+    - field.field.node.official.field_phone
+    - field.field.node.official.field_role
+    - node.type.official
+  module:
+    - user
+id: node.official.card
+targetEntityType: node
+bundle: official
+mode: card
+content:
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_role:
+    type: string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  field_content: true
+  field_email: true
+  field_featured_image: true
+  field_phone: true
+  links: true
+  search_api_excerpt: true

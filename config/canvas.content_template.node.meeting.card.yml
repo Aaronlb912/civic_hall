@@ -1,0 +1,37 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.mercury.card
+    - core.entity_view_mode.node.card
+    - field.field.node.meeting.field_description
+    - node.type.meeting
+  module:
+    - node
+    - options
+id: node.meeting.card
+content_entity_type_id: node
+content_entity_type_bundle: meeting
+content_entity_type_view_mode: card
+component_tree:
+  '0:d2214049-456e-49f2-b8cd-9ced91e2bb5b':
+    uuid: d2214049-456e-49f2-b8cd-9ced91e2bb5b
+    component_id: sdc.mercury.card
+    component_version: c313844ff80fde7d
+    inputs:
+      background: background
+      style: framed
+      orientation: vertical
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:meeting␝title␞␟value'
+      level: 2
+      url:
+        sourceType: host-entity-url
+        absolute: false
+      text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:meeting␝field_description␞␟value'
+      is_text_centered: false
+exposed_slots: {  }
+page_variant: null

@@ -1,0 +1,18 @@
+{
+    "name": "drupal/civic_hall",
+    "description": "Designed for clerks and one-person IT shops, this template features How do I, departments, meetings and news, with city alerts, search and a contact form.",
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "drupal/core": "^11.4",
+        "drupal/drupal_cms_site_template_base": "^2",
+        "drupal/drupal_cms_forms": "^2",
+        "drupal/civic_hall_theme": "^1",
+        "drupal/drupal_cms_search": "^2",
+        "drupal/mercury": "^1.0"
+    },
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/civic_hall",
+        "source": "https://git.drupalcode.org/project/civic_hall"
+    }
+}

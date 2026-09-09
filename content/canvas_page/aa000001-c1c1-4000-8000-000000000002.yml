@@ -1,0 +1,74 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: aa000001-c1c1-4000-8000-000000000002
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 0
+  title:
+    -
+      value: 'Page not found'
+  components:
+    -
+      uuid: a5555555-c1c1-4000-8000-000000000001
+      component_id: sdc.mercury.section
+      inputs:
+        columns: '100'
+        mobile_columns: '1'
+        width: 75%
+        margin_block_start: '64'
+        margin_block_end: '64'
+        padding_block_start: '0'
+        padding_block_end: '0'
+        section_header: true
+        section_footer: true
+    -
+      parent_uuid: a5555555-c1c1-4000-8000-000000000001
+      slot: header_slot
+      uuid: a5555555-c1c1-4000-8000-000000000002
+      component_id: sdc.mercury.heading
+      inputs:
+        heading_text: 'Page not found'
+        level: 1
+        text_size: default
+        text_color: default
+        align: left
+    -
+      parent_uuid: a5555555-c1c1-4000-8000-000000000001
+      slot: main_slot
+      uuid: a5555555-c1c1-4000-8000-000000000003
+      component_id: sdc.mercury.text
+      inputs:
+        text:
+          value: '<p>That address is not on this site. Try How do I, or go back to the home page.</p>'
+          format: canvas_html_block
+        text_size: normal
+        text_color: default
+    -
+      parent_uuid: a5555555-c1c1-4000-8000-000000000001
+      slot: footer_slot
+      uuid: a5555555-c1c1-4000-8000-000000000004
+      component_id: sdc.mercury.button
+      inputs:
+        variant: primary
+        label: Home
+        href: /home
+        size: medium
+        mobile_width: false
+        icon_first: false
+        disabled: false
+  path:
+    -
+      alias: /404
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true
+  metatags:
+    -
+      value: '{"canonical_url":"[canvas_page:url]","description":"[canvas_page:description]","image_src":"[canvas_page:image:entity:field_media_image:entity:url]","title":"[canvas_page:title] | [site:name]"}'

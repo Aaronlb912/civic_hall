@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1000001-c1c1-4000-8000-000000000052
+  bundle: city_alert
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Hydrant flushing Thursday on Maple'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /alerts/hydrant-flushing-thursday-maple
+      langcode: en
+  field_alert_severity:
+    -
+      value: info
+  field_content:
+    -
+      value: '<p>Public Works is flushing hydrants Thursday. Maple from 2nd to 6th, starting around 8 a.m. Run the cold tap until it clears if it comes out rusty.</p>'
+      format: content_format
+  field_description:
+    -
+      value: 'Maple from 2nd to 6th. Water may run rusty.'

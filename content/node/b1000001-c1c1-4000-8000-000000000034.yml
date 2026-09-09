@@ -1,0 +1,50 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1000001-c1c1-4000-8000-000000000034
+  bundle: resident_task
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Find trash pickup day'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /how-do-i/find-trash-pickup-day
+      langcode: en
+  field_description:
+    -
+      value: 'North of Oak: Monday. South of Oak: Thursday.'
+  field_content:
+    -
+      value: '<p>Holiday weeks run one day late. If you are not sure which side of Oak you are on, we go by the even/odd side of your house number. Call Public Works if that still does not help.</p>'
+      format: content_format
+  field_task_category:
+    -
+      value: find
+  field_task_link:
+    -
+      uri: 'internal:/departments/public-works'
+      title: 'Public Works'
+      options: {  }

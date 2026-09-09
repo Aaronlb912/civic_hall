@@ -1,0 +1,84 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.system_branding_block
+    - canvas.component.sdc.mercury.footer
+    - canvas.component.sdc.mercury.heading
+    - canvas.component.sdc.mercury.text
+    - filter.format.canvas_html_block
+  module:
+    - options
+    - text
+  theme:
+    - civic_hall_theme
+id: civic_hall_theme.footer
+region: footer
+theme: civic_hall_theme
+component_tree:
+  a2222222-c1c1-4000-8000-000000000001:
+    uuid: a2222222-c1c1-4000-8000-000000000001
+    component_id: sdc.mercury.footer
+    component_version: d696cea1796b650e
+    inputs:
+      align: true
+  a2222222-c1c1-4000-8000-000000000002:
+    parent_uuid: a2222222-c1c1-4000-8000-000000000001
+    slot: footer_first
+    uuid: a2222222-c1c1-4000-8000-000000000002
+    component_id: block.system_branding_block
+    component_version: 7d528e00f56b3abf
+    inputs:
+      label: 'Site branding'
+      label_display: '0'
+      use_site_logo: false
+      use_site_name: true
+      use_site_slogan: true
+  a2222222-c1c1-4000-8000-000000000003:
+    parent_uuid: a2222222-c1c1-4000-8000-000000000001
+    slot: footer_last
+    uuid: a2222222-c1c1-4000-8000-000000000003
+    component_id: sdc.mercury.heading
+    component_version: 9ba4baa1476e5856
+    inputs:
+      heading_text: 'City Hall'
+      level: 2
+      text_size: heading-responsive-xl
+      text_color: inverted
+      align: left
+  a2222222-c1c1-4000-8000-000000000004:
+    parent_uuid: a2222222-c1c1-4000-8000-000000000001
+    slot: footer_last
+    uuid: a2222222-c1c1-4000-8000-000000000004
+    component_id: sdc.mercury.text
+    component_version: 16c79c28a4108f9b
+    inputs:
+      text:
+        value: '<p>100 Main Street. Clerk counter Monday–Friday, 8:30 a.m. to 4:30 p.m. (555) 555-0100.</p>'
+        format: canvas_html_block
+      text_size: text-sm
+      text_color: inverted
+  a2222222-c1c1-4000-8000-000000000005:
+    parent_uuid: a2222222-c1c1-4000-8000-000000000001
+    slot: footer_utility_last
+    uuid: a2222222-c1c1-4000-8000-000000000005
+    component_id: sdc.mercury.text
+    component_version: 16c79c28a4108f9b
+    inputs:
+      text:
+        value: '<p>Maple Ridge sample site. Not a real city.</p>'
+        format: canvas_html_block
+      text_size: text-xs
+      text_color: inverted
+  a2222222-c1c1-4000-8000-000000000006:
+    parent_uuid: a2222222-c1c1-4000-8000-000000000001
+    slot: footer_utility_first
+    uuid: a2222222-c1c1-4000-8000-000000000006
+    component_id: sdc.mercury.text
+    component_version: 16c79c28a4108f9b
+    inputs:
+      text:
+        value: '<p><a href="/how-do-i">How do I</a> · <a href="/meetings">Meetings</a> · <a href="/news">News</a> · <a href="/form/contact-form">Contact</a></p>'
+        format: canvas_html_block
+      text_size: text-xs
+      text_color: inverted

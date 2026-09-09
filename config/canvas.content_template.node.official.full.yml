@@ -1,0 +1,166 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.system_breadcrumb_block
+    - canvas.component.sdc.mercury.group
+    - canvas.component.sdc.mercury.heading
+    - canvas.component.sdc.mercury.hero-billboard
+    - canvas.component.sdc.mercury.section
+    - canvas.component.sdc.mercury.text
+    - core.entity_view_mode.node.full
+    - field.field.media.image.field_media_image
+    - field.field.node.official.field_content
+    - field.field.node.official.field_description
+    - field.field.node.official.field_email
+    - field.field.node.official.field_featured_image
+    - field.field.node.official.field_phone
+    - field.field.node.official.field_role
+    - filter.format.content_format
+    - image.style.canvas_parametrized_width
+    - media.type.image
+    - node.type.official
+  module:
+    - file
+    - media
+    - node
+    - options
+id: node.official.full
+content_entity_type_id: node
+content_entity_type_bundle: official
+content_entity_type_view_mode: full
+component_tree:
+  d919877e-0949-453d-80bd-46550c782cc0:
+    uuid: d919877e-0949-453d-80bd-46550c782cc0
+    component_id: block.system_breadcrumb_block
+    component_version: 0d7e961dd03aa710
+    inputs:
+      label: Breadcrumbs
+      label_display: '0'
+  24cc205f-9b5c-4c48-b8d3-77e908217370:
+    uuid: 24cc205f-9b5c-4c48-b8d3-77e908217370
+    component_id: sdc.mercury.section
+    component_version: a917d5c9be8f2830
+    inputs:
+      width: 75%
+      columns: '100'
+      mobile_columns: '1'
+      margin_block_start: '32'
+      margin_block_end: '64'
+      padding_block_start: '0'
+      padding_block_end: '0'
+      section_header: true
+      section_footer: false
+  c52b2b7b-49ef-481c-acc9-62b3036d48aa:
+    parent_uuid: 24cc205f-9b5c-4c48-b8d3-77e908217370
+    slot: header_slot
+    uuid: c52b2b7b-49ef-481c-acc9-62b3036d48aa
+    component_id: sdc.mercury.heading
+    component_version: 9ba4baa1476e5856
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:official␝field_role␞␟value'
+      level: 3
+      text_size: heading-responsive-xl
+      text_color: default
+      align: left
+  53fd84d6-d2d9-435b-8979-f43d2bb1bc4b:
+    parent_uuid: 24cc205f-9b5c-4c48-b8d3-77e908217370
+    slot: header_slot
+    uuid: 53fd84d6-d2d9-435b-8979-f43d2bb1bc4b
+    component_id: sdc.mercury.heading
+    component_version: 9ba4baa1476e5856
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:official␝title␞␟value'
+      level: 1
+      text_size: heading-responsive-5xl
+      text_color: default
+      align: left
+  dc261b21-d65b-44ea-b6ca-240b846a5262:
+    parent_uuid: 24cc205f-9b5c-4c48-b8d3-77e908217370
+    slot: main_slot
+    uuid: dc261b21-d65b-44ea-b6ca-240b846a5262
+    component_id: sdc.mercury.heading
+    component_version: 9ba4baa1476e5856
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:official␝field_description␞␟value'
+      level: 2
+      text_size: heading-responsive-xl
+      text_color: default
+      align: left
+  8c1a2b3d-4e5f-4000-8000-00000000d002:
+    parent_uuid: 24cc205f-9b5c-4c48-b8d3-77e908217370
+    slot: main_slot
+    uuid: 8c1a2b3d-4e5f-4000-8000-00000000d002
+    component_id: sdc.mercury.hero-billboard
+    component_version: 69e1345b50b2f63c
+    inputs:
+      height: ribbon
+      flex_position: center-left
+      overlay_opacity: 0%
+      object_position: center
+      media:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:official␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
+      overlap_navbar: false
+  acc8edde-fc29-41ec-984d-f7b78757816f:
+    parent_uuid: 24cc205f-9b5c-4c48-b8d3-77e908217370
+    slot: main_slot
+    uuid: acc8edde-fc29-41ec-984d-f7b78757816f
+    component_id: sdc.mercury.group
+    component_version: bc70b6c5dbe37a22
+    inputs:
+      flex_direction: column
+      flex_gap: sm
+      items_align: start
+      flex_align: start
+      radius: sm
+      padding: md
+      background: secondary
+  db057cc8-684d-4977-b3fa-165c80fd5240:
+    parent_uuid: acc8edde-fc29-41ec-984d-f7b78757816f
+    slot: group_slot
+    uuid: db057cc8-684d-4977-b3fa-165c80fd5240
+    component_id: sdc.mercury.heading
+    component_version: 9ba4baa1476e5856
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:official␝field_email␞␟value'
+      level: 4
+      text_size: heading-responsive-lg
+      text_color: default
+      align: left
+  be5e21fb-fb7e-45b0-974d-3a9cafce8ba0:
+    parent_uuid: acc8edde-fc29-41ec-984d-f7b78757816f
+    slot: group_slot
+    uuid: be5e21fb-fb7e-45b0-974d-3a9cafce8ba0
+    component_id: sdc.mercury.heading
+    component_version: 9ba4baa1476e5856
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:official␝field_phone␞␟value'
+      level: 4
+      text_size: heading-responsive-lg
+      text_color: default
+      align: left
+  0c50b1e2-ba60-4d5b-ba78-e2b06371aacd:
+    parent_uuid: 24cc205f-9b5c-4c48-b8d3-77e908217370
+    slot: main_slot
+    uuid: 0c50b1e2-ba60-4d5b-ba78-e2b06371aacd
+    component_id: sdc.mercury.text
+    component_version: 16c79c28a4108f9b
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:official␝field_content␞␟processed'
+      text_size: normal
+      text_color: default
+exposed_slots: {  }
+page_variant: null

@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1000001-c1c1-4000-8000-000000000012
+  bundle: official
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Marcus Hale'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /officials/marcus-hale
+      langcode: en
+  field_description:
+    -
+      value: 'Council president. Ward 1.'
+  field_content:
+    -
+      value: '<p>Ward 1 is downtown and the riverfront. Hale chairs the regular Council meetings.</p>'
+      format: content_format
+  field_role:
+    -
+      value: 'Council President, Ward 1'
+  field_email:
+    -
+      value: hale@mapleridge.example

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alert_severity
+    - node.type.city_alert
+  module:
+    - options
+id: node.city_alert.field_alert_severity
+field_name: field_alert_severity
+entity_type: node
+bundle: city_alert
+label: Severity
+description: 'How urgent this alert is.'
+required: true
+translatable: true
+default_value:
+  -
+    value: info
+default_value_callback: ''
+settings: {  }
+field_type: list_string

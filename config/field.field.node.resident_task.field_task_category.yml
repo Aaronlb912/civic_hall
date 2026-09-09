@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_task_category
+    - node.type.resident_task
+  module:
+    - options
+id: node.resident_task.field_task_category
+field_name: field_task_category
+entity_type: node
+bundle: resident_task
+label: Category
+description: 'Pay, report, apply, or find.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

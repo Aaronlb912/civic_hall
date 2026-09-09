@@ -1,0 +1,27 @@
+drupal/drupal_cms_events:
+  title: Events
+  type: recipe
+  logo: null
+  core: '^11'
+  machineName: drupal_cms_events
+  body:
+    summary: 'Adds an events content type if you also need rec programs, not just council meetings.'
+  packageName: drupal/drupal_cms_events
+drupal/scheduler:
+  title: Scheduler
+  type: module
+  logo: null
+  core: '^11'
+  machineName: scheduler
+  body:
+    summary: 'Already used by Drupal CMS. Keep it if you want news to go up at a set time.'
+  packageName: drupal/scheduler
+drupal/simple_sitemap:
+  title: Simple XML Sitemap
+  type: module
+  logo: null
+  core: '^11'
+  machineName: simple_sitemap
+  body:
+    summary: 'XML sitemap. Most city sites want this.'
+  packageName: drupal/simple_sitemap

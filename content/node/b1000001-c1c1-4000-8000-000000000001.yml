@@ -1,0 +1,51 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1000001-c1c1-4000-8000-000000000001
+  bundle: department
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'City Clerk'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /departments/city-clerk
+      langcode: en
+  field_description:
+    -
+      value: 'Records, meetings, licenses, and public information requests.'
+  field_content:
+    -
+      value: '<p>The Clerk keeps the official records and puts together the Council agenda. Public records requests use the <a href="/form/public-records-request">public records request</a> form, or come to the counter.</p><p>Licenses: bring a photo ID. Counter closes at 4:30. If you are mailing something, use 100 Main Street, Maple Ridge.</p>'
+      format: content_format
+  field_phone:
+    -
+      value: '(555) 555-0100'
+  field_email:
+    -
+      value: clerk@mapleridge.example
+  field_hours:
+    -
+      value: 'Monday-Friday, 8:30 a.m. to 4:30 p.m.'

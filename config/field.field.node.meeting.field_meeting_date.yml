@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_date
+    - node.type.meeting
+  module:
+    - datetime
+id: node.meeting.field_meeting_date
+field_name: field_meeting_date
+entity_type: node
+bundle: meeting
+label: 'Meeting date'
+description: 'When the meeting starts.'
+required: true
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

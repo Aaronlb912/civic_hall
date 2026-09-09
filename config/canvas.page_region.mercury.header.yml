@@ -1,0 +1,81 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.system_branding_block
+    - canvas.component.block.system_menu_block.main
+    - canvas.component.block.views_block.civic_hall-block_alerts
+    - canvas.component.block.views_exposed_filter_block.search-page
+    - canvas.component.sdc.mercury.button
+    - canvas.component.sdc.mercury.navbar
+  module:
+    - link
+    - options
+  theme:
+    - mercury
+id: mercury.header
+region: header
+theme: mercury
+component_tree:
+  a1111111-c1c1-4000-8000-000000000001:
+    uuid: a1111111-c1c1-4000-8000-000000000001
+    component_id: sdc.mercury.navbar
+    component_version: 3149f199d66bbc29
+    inputs:
+      menu_align: right
+  a1111111-c1c1-4000-8000-000000000002:
+    parent_uuid: a1111111-c1c1-4000-8000-000000000001
+    slot: logo
+    uuid: a1111111-c1c1-4000-8000-000000000002
+    component_id: block.system_branding_block
+    component_version: 7d528e00f56b3abf
+    inputs:
+      label: 'Site branding'
+      label_display: '0'
+      use_site_logo: false
+      use_site_name: true
+      use_site_slogan: false
+  a1111111-c1c1-4000-8000-000000000003:
+    parent_uuid: a1111111-c1c1-4000-8000-000000000001
+    slot: navigation
+    uuid: a1111111-c1c1-4000-8000-000000000003
+    component_id: block.system_menu_block.main
+    component_version: 322535c0078cf59c
+    inputs:
+      label: 'Main navigation'
+      label_display: '0'
+      level: 1
+      depth: 2
+      expand_all_items: true
+  a1111111-c1c1-4000-8000-000000000004:
+    parent_uuid: a1111111-c1c1-4000-8000-000000000001
+    slot: links
+    uuid: a1111111-c1c1-4000-8000-000000000004
+    component_id: sdc.mercury.button
+    component_version: 0ca665b3987e81dd
+    inputs:
+      variant: secondary-inverted
+      label: 'Pay a water bill'
+      href: /how-do-i/pay-a-water-bill
+      size: small
+      icon: arrow-right
+      mobile_width: false
+      icon_first: false
+      disabled: false
+  a1111111-c1c1-4000-8000-000000000006:
+    uuid: a1111111-c1c1-4000-8000-000000000006
+    component_id: block.views_exposed_filter_block.search-page
+    component_version: f0ca33cbfe79a9ef
+    inputs:
+      label: 'Exposed form: search-page'
+      label_display: '0'
+      views_label: ''
+  a1111111-c1c1-4000-8000-000000000005:
+    uuid: a1111111-c1c1-4000-8000-000000000005
+    component_id: block.views_block.civic_hall-block_alerts
+    component_version: d80f2f1936788402
+    inputs:
+      label: 'City alerts'
+      label_display: '0'
+      views_label: ''
+      items_per_page: null

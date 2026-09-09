@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1000001-c1c1-4000-8000-000000000042
+  bundle: news
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Rec center summer hours end September 2'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/2026-08/rec-center-summer-hours-end
+      langcode: en
+  field_description:
+    -
+      value: 'Fall hours Sept 3. Weekdays 6 a.m.–8 p.m.'
+  field_content:
+    -
+      value: '<p>After Labor Day. Saturday is still 8–2. Lap swim did not change. Front desk stops selling day passes at 7:45.</p>'
+      format: content_format

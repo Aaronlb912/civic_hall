@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: c1000001-c1c1-4000-8000-000000000003
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    c1000001-c1c1-4000-8000-000000000010: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Mayor & Council'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/officials'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:c1000001-c1c1-4000-8000-000000000010'
+  revision_translation_affected:
+    -
+      value: true

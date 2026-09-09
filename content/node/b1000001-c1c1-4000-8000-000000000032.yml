@@ -1,0 +1,50 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1000001-c1c1-4000-8000-000000000032
+  bundle: resident_task
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Report a pothole'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /how-do-i/report-a-pothole
+      langcode: en
+  field_description:
+    -
+      value: 'Street or sidewalk. Public Works.'
+  field_content:
+    -
+      value: '<p>Nearest address or intersection. We cannot take photos over the phone. After 3:30, Police Dispatch for a hazard in the travel lane.</p>'
+      format: content_format
+  field_task_category:
+    -
+      value: report
+  field_task_link:
+    -
+      uri: 'internal:/form/report-pothole'
+      title: 'File a report'
+      options: {  }

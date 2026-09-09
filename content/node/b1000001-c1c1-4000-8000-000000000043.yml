@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1000001-c1c1-4000-8000-000000000043
+  bundle: news
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Council adopts the 2027 budget'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/2026-08/council-adopts-2027-budget
+      langcode: en
+  field_description:
+    -
+      value: 'Tax rate unchanged. Street resurfacing is in it.'
+  field_content:
+    -
+      value: '<p>Adopted Aug 19. Packet is on the meeting page. Clerk has a one-pager if you do not want the whole PDF.</p>'
+      format: content_format

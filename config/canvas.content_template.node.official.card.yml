@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.mercury.card
+    - core.entity_view_mode.node.card
+    - field.field.media.image.field_media_image
+    - field.field.node.official.field_featured_image
+    - field.field.node.official.field_role
+    - image.style.canvas_parametrized_width
+    - media.type.image
+    - node.type.official
+  module:
+    - file
+    - media
+    - node
+    - options
+id: node.official.card
+content_entity_type_id: node
+content_entity_type_bundle: official
+content_entity_type_view_mode: card
+component_tree:
+  '0:f1cf9e80-6a01-4127-bde6-5d84e27a9567':
+    uuid: f1cf9e80-6a01-4127-bde6-5d84e27a9567
+    component_id: sdc.mercury.card
+    component_version: c313844ff80fde7d
+    inputs:
+      background: background
+      style: framed
+      orientation: vertical
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:official␝title␞␟value'
+      level: 2
+      url:
+        sourceType: host-entity-url
+        absolute: false
+      media:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:official␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
+      text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:official␝field_role␞␟value'
+      is_text_centered: false
+exposed_slots: {  }
+page_variant: null

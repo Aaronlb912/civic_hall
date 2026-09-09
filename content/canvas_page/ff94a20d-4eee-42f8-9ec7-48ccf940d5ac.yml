@@ -1,0 +1,257 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: ff94a20d-4eee-42f8-9ec7-48ccf940d5ac
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 0
+  title:
+    -
+      value: Home
+  components:
+    -
+      uuid: a3333333-c1c1-4000-8000-000000000010
+      component_id: sdc.mercury.cta
+      inputs:
+        heading_text: 'Clerk counter'
+        level: 1
+        text: '100 Main Street. 8:30 a.m. to 4:30 p.m. Closed weekends.'
+        text_align: left
+        background_color: inverted
+        overlay_opacity: 60%
+    -
+      parent_uuid: a3333333-c1c1-4000-8000-000000000010
+      slot: actions
+      uuid: a3333333-c1c1-4000-8000-000000000011
+      component_id: sdc.mercury.button
+      inputs:
+        variant: primary
+        label: 'Pay a water bill'
+        href: /how-do-i/pay-a-water-bill
+        size: medium
+        icon: arrow-right
+        mobile_width: false
+        icon_first: false
+        disabled: false
+    -
+      uuid: a3333333-c1c1-4000-8000-000000000016
+      component_id: sdc.mercury.hero-billboard
+      inputs:
+        height: ribbon
+        flex_position: center-left
+        overlay_opacity: 0%
+        object_position: center
+        overlap_navbar: false
+    -
+      uuid: a3333333-c1c1-4000-8000-000000000020
+      component_id: sdc.mercury.section
+      inputs:
+        columns: 25-25-25-25
+        mobile_columns: '1'
+        width: 100%
+        margin_block_start: '20'
+        margin_block_end: '20'
+        padding_block_start: '0'
+        padding_block_end: '0'
+        section_header: true
+        section_footer: false
+    -
+      parent_uuid: a3333333-c1c1-4000-8000-000000000020
+      slot: header_slot
+      uuid: a3333333-c1c1-4000-8000-000000000021
+      component_id: sdc.mercury.heading
+      inputs:
+        heading_text: 'How do I'
+        level: 2
+        text_size: heading-responsive-lg
+        text_color: default
+        align: left
+    -
+      parent_uuid: a3333333-c1c1-4000-8000-000000000020
+      slot: main_slot
+      uuid: a3333333-c1c1-4000-8000-000000000022
+      component_id: sdc.mercury.card
+      inputs:
+        heading_text: 'Pay a water bill'
+        level: 3
+        url: /how-do-i/pay-a-water-bill
+        orientation: vertical
+        style: framed
+        text: 'Online or at the Finance window, first floor.'
+        is_text_centered: false
+        background: background
+    -
+      parent_uuid: a3333333-c1c1-4000-8000-000000000020
+      slot: main_slot
+      uuid: a3333333-c1c1-4000-8000-000000000023
+      component_id: sdc.mercury.card
+      inputs:
+        heading_text: 'Report a pothole'
+        level: 3
+        url: /form/report-pothole
+        orientation: vertical
+        style: framed
+        text: 'Street or sidewalk. Public Works.'
+        is_text_centered: false
+        background: background
+    -
+      parent_uuid: a3333333-c1c1-4000-8000-000000000020
+      slot: main_slot
+      uuid: a3333333-c1c1-4000-8000-000000000024
+      component_id: sdc.mercury.card
+      inputs:
+        heading_text: 'Get a building permit'
+        level: 3
+        url: /how-do-i/get-a-building-permit
+        orientation: vertical
+        style: framed
+        text: 'Building, fence, or sign. Public Works.'
+        is_text_centered: false
+        background: background
+    -
+      parent_uuid: a3333333-c1c1-4000-8000-000000000020
+      slot: main_slot
+      uuid: a3333333-c1c1-4000-8000-000000000025
+      component_id: sdc.mercury.card
+      inputs:
+        heading_text: 'Find trash pickup day'
+        level: 3
+        url: /how-do-i/find-trash-pickup-day
+        orientation: vertical
+        style: framed
+        text: 'North of Oak: Monday. South of Oak: Thursday.'
+        is_text_centered: false
+        background: background
+    -
+      uuid: a3333333-c1c1-4000-8000-000000000030
+      component_id: sdc.mercury.section
+      inputs:
+        columns: 50-50
+        mobile_columns: '1'
+        width: 100%
+        margin_block_start: '20'
+        margin_block_end: '20'
+        padding_block_start: '0'
+        padding_block_end: '0'
+        section_header: true
+        section_footer: false
+    -
+      parent_uuid: a3333333-c1c1-4000-8000-000000000030
+      slot: header_slot
+      uuid: a3333333-c1c1-4000-8000-000000000031
+      component_id: sdc.mercury.heading
+      inputs:
+        heading_text: Meetings
+        level: 2
+        text_size: heading-responsive-lg
+        text_color: default
+        align: left
+    -
+      parent_uuid: a3333333-c1c1-4000-8000-000000000030
+      slot: main_slot
+      uuid: a3333333-c1c1-4000-8000-000000000032
+      component_id: sdc.mercury.card
+      inputs:
+        heading_text: 'City Council regular meeting'
+        level: 3
+        url: /meetings/city-council-regular-meeting
+        orientation: vertical
+        style: framed
+        text: 'Tuesday, 7 p.m., Council chambers. Packet goes up 72 hours ahead.'
+        is_text_centered: false
+        background: background
+    -
+      parent_uuid: a3333333-c1c1-4000-8000-000000000030
+      slot: main_slot
+      uuid: a3333333-c1c1-4000-8000-000000000033
+      component_id: sdc.mercury.card
+      inputs:
+        heading_text: 'Planning Commission'
+        level: 3
+        url: /meetings/planning-commission
+        orientation: vertical
+        style: framed
+        text: 'Oak Street overlay. Hearing is done.'
+        is_text_centered: false
+        background: background
+    -
+      uuid: a3333333-c1c1-4000-8000-000000000040
+      component_id: sdc.mercury.section
+      inputs:
+        columns: 33-33-33
+        mobile_columns: '1'
+        width: 100%
+        margin_block_start: '20'
+        margin_block_end: '32'
+        padding_block_start: '0'
+        padding_block_end: '0'
+        section_header: true
+        section_footer: false
+    -
+      parent_uuid: a3333333-c1c1-4000-8000-000000000040
+      slot: header_slot
+      uuid: a3333333-c1c1-4000-8000-000000000041
+      component_id: sdc.mercury.heading
+      inputs:
+        heading_text: News
+        level: 2
+        text_size: heading-responsive-lg
+        text_color: default
+        align: left
+    -
+      parent_uuid: a3333333-c1c1-4000-8000-000000000040
+      slot: main_slot
+      uuid: a3333333-c1c1-4000-8000-000000000042
+      component_id: sdc.mercury.card
+      inputs:
+        heading_text: 'Water main work on Oak Street'
+        level: 3
+        url: /news/2026-09/water-main-work-oak-street
+        orientation: vertical
+        style: framed
+        text: 'Nights, Sept 14–16. Lanes east of 4th.'
+        is_text_centered: false
+        background: background
+    -
+      parent_uuid: a3333333-c1c1-4000-8000-000000000040
+      slot: main_slot
+      uuid: a3333333-c1c1-4000-8000-000000000043
+      component_id: sdc.mercury.card
+      inputs:
+        heading_text: 'Rec center summer hours end September 2'
+        level: 3
+        url: /news/2026-08/rec-center-summer-hours-end
+        orientation: vertical
+        style: framed
+        text: 'Fall hours Sept 3. Weekdays 6 a.m.–8 p.m.'
+        is_text_centered: false
+        background: background
+    -
+      parent_uuid: a3333333-c1c1-4000-8000-000000000040
+      slot: main_slot
+      uuid: a3333333-c1c1-4000-8000-000000000044
+      component_id: sdc.mercury.card
+      inputs:
+        heading_text: 'Council adopts the 2027 budget'
+        level: 3
+        url: /news/2026-08/council-adopts-2027-budget
+        orientation: vertical
+        style: framed
+        text: 'Tax rate unchanged. Street resurfacing is in it.'
+        is_text_centered: false
+        background: background
+  path:
+    -
+      alias: /home
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true
+  metatags:
+    -
+      value: '{"canonical_url":"[canvas_page:url]","description":"[canvas_page:description]","image_src":"[canvas_page:image:entity:field_media_image:entity:url]","title":"[canvas_page:title] | [site:name]"}'

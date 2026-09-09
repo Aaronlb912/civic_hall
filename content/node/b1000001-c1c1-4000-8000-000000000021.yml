@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1000001-c1c1-4000-8000-000000000021
+  bundle: meeting
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'City Council regular meeting'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /meetings/city-council-regular-meeting
+      langcode: en
+  field_description:
+    -
+      value: 'Tuesday, 7 p.m., Council chambers.'
+  field_content:
+    -
+      value: '<p>Packet goes up 72 hours ahead (Clerk). Public comment is first. Chambers: 100 Main. If you need an interpreter, call the Clerk by noon the day before.</p>'
+      format: content_format
+  field_meeting_date:
+    -
+      value: '2026-09-16T19:00:00'
+  field_meeting_type:
+    -
+      value: council

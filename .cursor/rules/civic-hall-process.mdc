@@ -1,0 +1,54 @@
+---
+description: CivicHall standing process — this Maple Ridge recipe only
+alwaysApply: true
+---
+
+# CivicHall
+
+This rule is for this CivicHall recipe. For a new project, paste `I-WANT.md`.
+
+Follow `AGENTS.md` for product constraints. Mercury plus the sibling CivicHall theme package. No `*.info.yml` in the recipe, no `drupal_cms_` prefix, no patches, no `vendor/`. Do not commit unless asked.
+
+Work in this recipe folder. Theme markup lives in the sibling `civic_hall_theme` package. Live demo from however they already run Drupal (DDEV, WSL, `ddev describe` for the URL). Export into this recipe and `~/maple-ridge/packages/civic_hall`. Copy the theme into `~/maple-ridge/packages/civic_hall_theme`.
+
+## Contract
+
+Keep the types, paths, and listing strings this site already ships. Do not swap them for another city’s demo.
+
+Types: resident_task, department, official, meeting, news, city_alert.
+
+Front page is `/home`. Contact is `/form/contact-form`. Sample forms stay `/form/report-pothole` and `/form/public-records-request`.
+
+Header: site name from Basic site settings / branding, not hardcoded in a second component. Pay a water bill is the one primary button in navbar `links` if that action is still on the site. Search is a header icon; the field drops under the navy row and does not cover Pay. Drupal CMS `/search` and `keywords`. Search filter label is **Search**.
+
+Alerts: thin strip under the nav on every page, title + sentence, not color only, not a card. `role="status"`.
+
+Home: one clear counter (Clerk counter), one primary action. Empty navy means empty (no grey hole, no broken img). Filled images crop. Scrim if type sits on a photo. Section Background image uses the Mercury `media` / `background_media` prop.
+
+Contact: hours and shortcuts. Button says what it does. Required fields have a text note, not only an asterisk.
+
+Pay stays a counter/instructions page, not a checkout. Do not add a payment processor. Do not replace Contact.
+
+Accessibility a clerk can keep: skip-link focus visible, labeled search and fields, focus rings on nav, Pay, search, fields, and buttons, tap targets at least 40px, no horizontal scroll, desktop and 390px. Do not claim 508 certification. Listing card titles and Pay in the navy row come from the CivicHall Mercury subtheme, not from Canvas JS or a closed-menu CSS hack.
+
+Global CSS/JS through the Canvas asset library entity `set` / `setProperties` so compiled `assets://canvas/*` files write. New Canvas components used in trees ship as `config/canvas.component.*.yml`.
+
+README After install names the real screens: Basic site settings, Canvas, node form, Structure → Webforms, Search view. Include the sample-forms line and the labels/alt line.
+
+Voice: clerk, streets, hours, phone. Emails on `.example`. Maple Ridge stays Maple Ridge unless they asked to change it.
+
+## Build
+
+Read the site first: types, menus, Canvas home/header/footer, global CSS, README After install, tests. Drupal CMS already ships search, media, contact, Webform, and Mercury. Use those. Do not invent a CivicHall-only module, Solr, USWDS, or a second search stack.
+
+Do not rewrite sample node YAML except Canvas card URLs that 404.
+
+Build what they asked for, then keep the contract above. Desktop and 390px. No overlay on nav or Pay. Empty states empty. A clerk can change it in the UI.
+
+Verify `/` and the listing paths in `tests/src/Functional/ValidationTest.php` still 200 with those strings (Pay a water bill, City Clerk, City Council, 100 Main). Listing titles are h2 in the HTML. Alert still under the nav. Search still under the navy row. Pay in the navy row at 390. Then export. Copy config/README/Canvas into this recipe and into `~/maple-ridge/packages/civic_hall`. Copy the theme into `~/maple-ridge/packages/civic_hall_theme`. Leave git alone unless they ask to commit.
+
+## Stop
+
+Stop when a clerk could do the next edit without you. If the next step is “change the city name” or “add a photo,” the README already says where. Do not open a new feature.
+
+If Drupal CMS cannot do something without a module or theme, say so in one sentence and use the closest Mercury/Canvas field that already exists.

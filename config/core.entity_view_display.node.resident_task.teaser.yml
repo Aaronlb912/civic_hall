@@ -1,0 +1,51 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.resident_task.field_content
+    - field.field.node.resident_task.field_description
+    - field.field.node.resident_task.field_task_category
+    - field.field.node.resident_task.field_task_link
+    - node.type.resident_task
+  module:
+    - link
+    - options
+    - user
+id: node.resident_task.teaser
+targetEntityType: node
+bundle: resident_task
+mode: teaser
+content:
+  field_task_category:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_task_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  content_moderation_control: true
+  field_content: true
+  langcode: true
+  links: true
+
