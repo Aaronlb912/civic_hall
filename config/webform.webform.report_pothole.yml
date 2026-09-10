@@ -21,7 +21,7 @@ elements: |-
     '#type': webform_markup
     '#markup': |
       <p>Public Works, weekdays 7:00 a.m. to 3:30 p.m. The shop is on Industrial Drive, not at City Hall.</p>
-      <p>Nearest address or intersection. We cannot take photos over the phone. After 3:30, a hole in the travel lane goes to Police Dispatch, (555) 555-0100.</p>
+      <p>Nearest address or intersection. We cannot take photos over the phone. Send report when you have the street and what is wrong. After 3:30, a hole in the travel lane goes to Police Dispatch, (555) 555-0100.</p>
     '#wrapper_attributes':
       class:
         - civic-hall-contact-intro

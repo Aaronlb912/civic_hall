@@ -21,7 +21,7 @@ elements: |-
     '#type': webform_markup
     '#markup': |
       <p>City Clerk, 100 Main Street. Counter Monday–Friday, 8:30 a.m. to 4:30 p.m. Phone (555) 555-0100.</p>
-      <p>This is a records request, not a 911 call and not a pothole report. Copies are picked up at the counter unless you ask for mail.</p>
+      <p>This is a records request, not a 911 call and not a pothole report. Send request when you know the meeting date, an address, or the permit number. Copies are picked up at the counter unless you ask for mail.</p>
     '#wrapper_attributes':
       class:
         - civic-hall-contact-intro

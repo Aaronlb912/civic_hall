@@ -870,7 +870,7 @@ config:
             '#type': webform_markup
             '#markup': |
               <p>100 Main Street. Clerk counter Monday–Friday, 8:30 a.m. to 4:30 p.m. Phone (555) 555-0100.</p>
-              <p>If the errand is already on How do I, use that page. This form is for a question that is not listed there.</p>
+              <p>If the errand is already on How do I, use that page. Send message when the question is not listed there.</p>
               <ul>
               <li><a href="/how-do-i/pay-a-water-bill">Pay a water bill</a></li>
               <li><a href="/form/report-pothole">Report a pothole</a></li>

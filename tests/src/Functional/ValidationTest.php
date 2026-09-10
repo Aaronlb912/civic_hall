@@ -105,12 +105,16 @@ class ValidationTest extends BrowserTestBase {
     $this->assertSession()->pageTextContains('100 Main');
     $this->assertSession()->pageTextContains('What do you need?');
     $this->assertSession()->pageTextContains('If the errand is already on How do I');
+    $this->assertSession()->pageTextContains('Send message');
+    $this->assertSession()->buttonExists('Send message');
     $this->drupalGet('/form/report-pothole');
     $this->assertSession()->pageTextContains('Street or intersection');
     $this->assertSession()->pageTextContains('Send report');
+    $this->assertSession()->buttonExists('Send report');
     $this->drupalGet('/form/public-records-request');
     $this->assertSession()->pageTextContains('What records');
     $this->assertSession()->pageTextContains('Send request');
+    $this->assertSession()->buttonExists('Send request');
 
     $library = AssetLibrary::load('global');
     $this->assertNotNull($library);
