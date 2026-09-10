@@ -24,7 +24,7 @@ Then finish this class of work. Adapt the pieces to the site in front of you. Do
 - One primary action in the header if the site has one. That page stays instructions or a counter, not a checkout. Do not add a payment processor.
 - Search is a header control. The field drops under the nav and does not cover that action. Use the search the platform already ships, with a real label.
 - If the site has alerts or notices, they are a thin strip under the nav. Title + sentence, not color only, not a card.
-- Home: one clear lead, one primary action. Empty media stays empty (no grey hole, no broken image). Filled media crops. Type still reads on a photo.
+- Home: one clear lead, one primary action. Empty media stays empty (no gray hole, no broken image). Filled media crops. Type still reads on a photo.
 - Contact (or the main form) has hours and shortcuts if that fits. Button says what it does. Required fields have a text note, not only an asterisk.
 - One or two sample forms only on pages that already look like they should open a form. Wire the existing links. Do not replace the main contact form.
 - Accessibility a person can keep: skip-link focus visible, labeled controls, required-field note, visible focus on nav / primary action / search / fields / buttons, tap targets at least 40px, no horizontal scroll, desktop and ~390px. Do not claim 508 certification. Do not ship a forbidden theme or module to fix platform limits.

@@ -11,3 +11,15 @@ GDS
 LocalGov
 Canvas
 Tugboat
+blockcivic
+Cpath
+Csvg
+webform
+Webforms
+wordmark
+ℹ︎boolean
+ℹ︎entity
+ℹ︎link
+ℹ︎list
+ℹ︎string
+ℹ︎text

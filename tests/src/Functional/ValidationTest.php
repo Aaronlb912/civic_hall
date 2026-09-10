@@ -76,7 +76,17 @@ class ValidationTest extends BrowserTestBase {
     }
 
     $session = $this->getSession();
-    foreach (['/how-do-i', '/departments', '/officials', '/meetings', '/news', '/government', '/form/contact-form', '/form/report-pothole', '/form/public-records-request'] as $path) {
+    foreach ([
+      '/how-do-i',
+      '/departments',
+      '/officials',
+      '/meetings',
+      '/news',
+      '/government',
+      '/form/contact-form',
+      '/form/report-pothole',
+      '/form/public-records-request',
+    ] as $path) {
       $this->drupalGet($path);
       $this->assertSame(200, $session->getStatusCode(), "$path should be publicly reachable.");
     }
