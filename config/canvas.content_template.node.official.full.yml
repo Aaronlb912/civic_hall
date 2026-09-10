@@ -120,8 +120,6 @@ component_tree:
       items_align: start
       flex_align: start
       radius: sm
-      padding: md
-      background: secondary
   db057cc8-684d-4977-b3fa-165c80fd5240:
     parent_uuid: acc8edde-fc29-41ec-984d-f7b78757816f
     slot: group_slot
