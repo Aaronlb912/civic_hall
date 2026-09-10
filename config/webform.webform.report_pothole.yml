@@ -188,7 +188,6 @@ settings:
   token_update: false
   token_delete: false
   serial_disabled: false
-  form_submit_label: 'Send report'
 access:
   create:
     roles:
