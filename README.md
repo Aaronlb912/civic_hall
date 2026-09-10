@@ -40,21 +40,23 @@ It also pulls in the usual Drupal CMS pieces (media, search, contact form, SEO).
 
 Needs DDEV 1.25+. Pick CivicHall on the template screen after launch.
 
+Composer packages: `drupal/civic_hall` (this recipe) and `drupal/civic_hall_theme` (Mercury subtheme). Use `^` constraints (`^1.0` for the theme). Drupal.org packaging can lag a new tag; if Composer cannot see the version yet, wait or use the path repos below.
+
+The theme is on Drupal.org. The recipe package is not on packages.drupal.org yet. From a local recipe clone, add that path repo **before** launch, then pick CivicHall the same way:
+
 ```shell
 mkdir maple-ridge && cd maple-ridge
 ddev config --project-type=drupal11 --docroot=web
 ddev composer create-project drupal/cms
-ddev composer require drupal/civic_hall
-ddev launch
-```
-
-Not on Drupal.org yet. From local clones, add both path repos **before** launch, then pick CivicHall the same way:
-
-```shell
-ddev composer repository add civic_hall_theme path /path/to/civic_hall_theme
 ddev composer repository add civic_hall path /path/to/civic_hall
 ddev composer require drupal/civic_hall:@dev
 ddev launch
+```
+
+If the theme tarball is also missing, add its path repo too:
+
+```shell
+ddev composer repository add civic_hall_theme path /path/to/civic_hall_theme
 ```
 
 On Windows, use the URL from `ddev describe` if the `.ddev.site` name does not resolve.
@@ -63,8 +65,8 @@ On Windows, use the URL from `ddev describe` if the `.ddev.site` name does not r
 
 Maple Ridge stays until you change it. Do this from the UI.
 
-1. Theme: Appearance. Default is CivicHall (Mercury subtheme). Drupal.org hosting for that theme and this recipe is contrib, not the default CMS catalog.
-2. Site name: Configuration → System → Basic site settings. The header wordmark and the footer name come from that field (branding block). Do not type the city name into a second Canvas heading.
+1. Theme: Appearance. Default is CivicHall (Mercury subtheme, Composer package `drupal/civic_hall_theme`). Drupal.org hosting for that theme and this recipe is contrib, not the default CMS catalog. Packaging can lag a new git tag.
+2. Site name: Configuration → System → Basic site settings. The header wordmark and the footer name come from that field (branding block). A clerk changes the city name here. Do not type the city name into a second Canvas heading.
 3. Slogan is on the same form. Mercury does not print it in the header or footer, so put the street on the two Canvas lines below.
 4. Home hours: edit the `/home` Canvas page. Navy intro heading is “Clerk counter.” The line under it is the street and hours (100 Main Street in the demo).
 5. Footer hours: edit the Canvas footer. Under the “City Hall” heading is street, counter hours, and phone. Bottom right still says “Maple Ridge sample site. Not a real city.” Rewrite or delete that.
@@ -83,8 +85,10 @@ Mercury’s navbar does not show child links in the mobile overlay. Government i
 
 Meetings do not have agenda/minutes file fields. Paste a PDF link in the body or add a file field.
 
-Tugboat preview is wired but has not been run from this machine. It will need the theme path repo or a published `drupal/civic_hall_theme` before it can resolve the recipe.
+Tugboat preview is wired but has not been run from this machine. It will need a published `drupal/civic_hall_theme` (or the theme path repo) before it can resolve the recipe.
 
 ## Issues
 
-Nothing to file against on Drupal.org until the project exists. Use this repo until then.
+Theme issues: https://www.drupal.org/project/issues/civic_hall_theme
+
+Recipe issues stay in this repo until the Drupal.org recipe project exists.
