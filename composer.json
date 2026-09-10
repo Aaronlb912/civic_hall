@@ -11,6 +11,11 @@
         "drupal/drupal_cms_search": "^2",
         "drupal/mercury": "^1.0"
     },
+    "config": {
+        "allow-plugins": {
+            "drupal/site_template_helper": true
+        }
+    },
     "support": {
         "issues": "https://www.drupal.org/project/issues/civic_hall",
         "source": "https://git.drupalcode.org/project/civic_hall"

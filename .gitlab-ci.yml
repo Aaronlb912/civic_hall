@@ -24,5 +24,8 @@ include:
 # Uncomment the lines below if you want to override any of the variables. The following is just an example.
 ################
 variables:
-  OPT_IN_TEST_NEXT_MAJOR: '1'
+  # Drupal CMS site templates pull in this Composer plugin. GitLab CI's
+  # generated composer.json does not allow it unless we declare it here too.
+  OPT_IN_TEST_NEXT_MAJOR: '0'
+  OPT_IN_TEST_DRUPAL_CMS: '1'
 
