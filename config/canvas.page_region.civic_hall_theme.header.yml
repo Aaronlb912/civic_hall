@@ -65,7 +65,7 @@ component_tree:
   a1111111-c1c1-4000-8000-000000000006:
     uuid: a1111111-c1c1-4000-8000-000000000006
     component_id: block.views_exposed_filter_block.civic_hall_search-page
-    component_version: 2fd43134faee4d45
+    component_version: 455a78f4950fbdb1
     inputs:
       label: 'Exposed form: Site search'
       label_display: '0'

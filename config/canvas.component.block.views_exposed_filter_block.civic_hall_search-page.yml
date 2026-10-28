@@ -5,7 +5,7 @@ dependencies:
     - views.view.civic_hall_search
   module:
     - views
-active_version: 2fd43134faee4d45
+active_version: 455a78f4950fbdb1
 versioned_properties:
   active:
     settings:
