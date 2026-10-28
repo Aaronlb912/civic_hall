@@ -5,7 +5,7 @@ dependencies:
     - canvas.component.block.system_branding_block
     - canvas.component.block.system_menu_block.main
     - canvas.component.block.views_block.civic_hall-block_alerts
-    - canvas.component.block.views_exposed_filter_block.search-page
+    - canvas.component.block.views_exposed_filter_block.civic_hall_search-page
     - canvas.component.sdc.mercury.button
     - canvas.component.sdc.mercury.navbar
   module:
@@ -56,7 +56,7 @@ component_tree:
     inputs:
       variant: secondary-inverted
       label: 'Pay a water bill'
-      href: /how-do-i/pay-a-water-bill
+      href: /how-do-i/pay-water-bill
       size: small
       icon: arrow-right
       mobile_width: false
@@ -64,10 +64,10 @@ component_tree:
       disabled: false
   a1111111-c1c1-4000-8000-000000000006:
     uuid: a1111111-c1c1-4000-8000-000000000006
-    component_id: block.views_exposed_filter_block.search-page
-    component_version: f0ca33cbfe79a9ef
+    component_id: block.views_exposed_filter_block.civic_hall_search-page
+    component_version: 2fd43134faee4d45
     inputs:
-      label: 'Exposed form: search-page'
+      label: 'Exposed form: Site search'
       label_display: '0'
       views_label: ''
   a1111111-c1c1-4000-8000-000000000005:

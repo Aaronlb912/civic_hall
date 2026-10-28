@@ -32,7 +32,7 @@ default:
       inputs:
         variant: primary
         label: 'Pay a water bill'
-        href: /how-do-i/pay-a-water-bill
+        href: /how-do-i/pay-water-bill
         size: medium
         icon: arrow-right
         mobile_width: false
@@ -79,7 +79,7 @@ default:
       inputs:
         heading_text: 'Pay a water bill'
         level: 3
-        url: /how-do-i/pay-a-water-bill
+        url: /how-do-i/pay-water-bill
         orientation: vertical
         style: framed
         text: 'Online or at the Finance window, first floor.'

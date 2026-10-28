@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.civic_hall_search
+  module:
+    - views
+active_version: 2fd43134faee4d45
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_exposed_filter_block:civic_hall_search-page'
+        label: 'Exposed form: Site search'
+        label_display: '0'
+        provider: views
+        views_label: ''
+    fallback_metadata:
+      slot_definitions: null
+label: 'Exposed form: Site search'
+id: block.views_exposed_filter_block.civic_hall_search-page
+provider: views
+source: block
+source_local_id: 'views_exposed_filter_block:civic_hall_search-page'
