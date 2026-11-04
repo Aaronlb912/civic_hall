@@ -23,3 +23,4 @@ wordmark
 ℹ︎list
 ℹ︎string
 ℹ︎text
+ℹ︎datetime

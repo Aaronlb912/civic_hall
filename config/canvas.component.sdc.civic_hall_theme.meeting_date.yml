@@ -17,9 +17,7 @@ versioned_properties:
             datetime_type: datetime
           field_instance_settings: {  }
           field_widget: datetime_default
-          default_value:
-            -
-              value: '2026-09-16T19:00:00+00:00'
+          default_value: null
           expression: ℹ︎datetime␟value
           derived_schema_metadata: {  }
     fallback_metadata:
@@ -29,4 +27,3 @@ id: sdc.civic_hall_theme.meeting_date
 provider: civic_hall_theme
 source: sdc
 source_local_id: 'civic_hall_theme:meeting_date'
-
