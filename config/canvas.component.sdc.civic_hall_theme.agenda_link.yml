@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+  theme:
+    - civic_hall_theme
+active_version: e0617924320b0579
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        label:
+          required: true
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Read the agenda'
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        url:
+          required: false
+          field_type: link
+          field_storage_settings: {  }
+          field_instance_settings:
+            title: 0
+            link_type: 17
+          field_widget: link_default
+          default_value:
+            -
+              uri: 'https://example.com/agenda.pdf'
+              options: {  }
+          expression: ℹ︎link␟url
+          derived_schema_metadata:
+            string_shape:
+              format: uri-reference
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Agenda link'
+id: sdc.civic_hall_theme.agenda_link
+provider: civic_hall_theme
+source: sdc
+source_local_id: 'civic_hall_theme:agenda_link'
+

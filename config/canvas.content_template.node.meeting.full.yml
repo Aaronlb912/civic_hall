@@ -3,12 +3,16 @@ status: true
 dependencies:
   config:
     - canvas.component.block.system_breadcrumb_block
+    - canvas.component.sdc.civic_hall_theme.agenda_link
+    - canvas.component.sdc.civic_hall_theme.meeting_date
     - canvas.component.sdc.mercury.heading
     - canvas.component.sdc.mercury.section
     - canvas.component.sdc.mercury.text
     - core.entity_view_mode.node.full
     - field.field.node.meeting.field_content
     - field.field.node.meeting.field_description
+    - field.field.node.meeting.field_meeting_agenda
+    - field.field.node.meeting.field_meeting_date
     - field.field.node.meeting.field_meeting_location
     - filter.format.content_format
     - node.type.meeting
@@ -69,6 +73,16 @@ component_tree:
       text_size: heading-responsive-xl
       text_color: default
       align: left
+  2e6b8f13-a4c9-4d07-b1e5-9c3a7d5f0b62:
+    parent_uuid: 994be44f-de6a-46d8-ad32-69c494f40c2b
+    slot: main_slot
+    uuid: 2e6b8f13-a4c9-4d07-b1e5-9c3a7d5f0b62
+    component_id: sdc.civic_hall_theme.meeting_date
+    component_version: b2d9621906950d13
+    inputs:
+      datetime:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:meeting␝field_meeting_date␞␟value'
   7c3f2a10-5d4e-4b8a-9f61-2a8d0e1b4c37:
     parent_uuid: 994be44f-de6a-46d8-ad32-69c494f40c2b
     slot: main_slot
@@ -81,6 +95,17 @@ component_tree:
         expression: 'ℹ︎␜entity:node:meeting␝field_meeting_location␞␟value'
       text_size: normal
       text_color: default
+  4d9a6c1e-8b27-4f35-a0c4-6e1f2b7d9a53:
+    parent_uuid: 994be44f-de6a-46d8-ad32-69c494f40c2b
+    slot: main_slot
+    uuid: 4d9a6c1e-8b27-4f35-a0c4-6e1f2b7d9a53
+    component_id: sdc.civic_hall_theme.agenda_link
+    component_version: e0617924320b0579
+    inputs:
+      label: 'Read the agenda'
+      url:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:meeting␝field_meeting_agenda␞␟uri'
   de8cfbd1-3e9c-4f5a-a1b6-475bc5856ca8:
     parent_uuid: 994be44f-de6a-46d8-ad32-69c494f40c2b
     slot: main_slot

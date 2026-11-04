@@ -92,9 +92,7 @@ Site templates do not get updates. After you change things, this template is jus
 
 Mercury’s navbar does not show child links in the mobile overlay. Government is the fallback page for Departments and Mayor & Council.
 
-Meetings have an optional location field, shown on the meeting page and in the calendar feed from `civic_hall_meetings`. They also have an optional agenda link. The link goes into the calendar event, but the meeting page does not show it yet. Mercury's components cannot hide themselves when a field is empty. A small `agenda_link` component for `civic_hall_theme` does, and it works on a dev site, but it needs a theme release first. Until then, paste the agenda link in the body too. There are no minutes file fields.
-
-The meeting date is stored and used by the calendar feed, but the meeting page and the Meetings listing do not print it. The sample meetings carry the day and time in their description line.
+Meetings have an optional location and an optional agenda link. The meeting page shows the date, location and agenda link, and each one is left out when empty. The same values go into the calendar feed from `civic_hall_meetings`. The Meetings listing does not print the date yet. The sample meetings carry the day and time in their description line. There are no minutes file fields.
 
 Tugboat preview is wired but has not been run from this machine. It needs `drupal/civic_hall_theme` on packages.drupal.org (or the theme path repo).
 
