@@ -46,3 +46,6 @@ default:
   field_meeting_type:
     -
       value: planning
+  field_meeting_location:
+    -
+      value: 'Room 2, City Hall, 100 Main Street'

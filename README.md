@@ -84,6 +84,7 @@ Maple Ridge stays until you change it. Do this from the UI.
 9. Sample forms: Report a pothole is `/form/report-pothole`. Public records is `/form/public-records-request`. Edit the labels and the “what happens next” text at Structure → Webforms. Mail uses the site email until you change each form’s email handler.
 10. Photos: open `/home` in Canvas, select Clerk counter (Hero CTA), add or replace Background image. Overlay opacity is the scrim. Empty is solid navy. Featured image on a department, news, or official node is a different slot on that page.
 11. Labels and photo alt: edit the field title on Structure → Webforms, or the Alternative text on the media/node form. Header search label is the exposed Search filter on the Site search view (Structure → Views → Site search). Results are at `/search`. This is not a 508 certificate.
+12. Calendar feed (optional): the `drupal/civic_hall_meetings` module adds a feed of your meetings at `/meetings.ics`, one per meeting type such as `/meetings/council.ics`, and a "Subscribe to meetings calendar" block. This recipe does not install it. Run `composer require drupal/civic_hall_meetings` and `drush en civic_hall_meetings`, then place the block on `/meetings` in Canvas or at Structure → Block layout. The module is on a dev branch until its first release.
 
 Site templates do not get updates. After you change things, this template is just history.
 
@@ -91,7 +92,9 @@ Site templates do not get updates. After you change things, this template is jus
 
 Mercury’s navbar does not show child links in the mobile overlay. Government is the fallback page for Departments and Mayor & Council.
 
-Meetings do not have agenda/minutes file fields. Paste a PDF link in the body or add a file field.
+Meetings have an optional location field, shown on the meeting page and in the calendar feed from `civic_hall_meetings`. They also have an optional agenda link. The link goes into the calendar event, but the meeting page does not show it yet. Mercury's components cannot hide themselves when a field is empty. A small `agenda_link` component for `civic_hall_theme` does, and it works on a dev site, but it needs a theme release first. Until then, paste the agenda link in the body too. There are no minutes file fields.
+
+The meeting date is stored and used by the calendar feed, but the meeting page and the Meetings listing do not print it. The sample meetings carry the day and time in their description line.
 
 Tugboat preview is wired but has not been run from this machine. It needs `drupal/civic_hall_theme` on packages.drupal.org (or the theme path repo).
 

@@ -46,3 +46,11 @@ default:
   field_meeting_type:
     -
       value: council
+  field_meeting_location:
+    -
+      value: 'Council chambers, 100 Main Street'
+  field_meeting_agenda:
+    -
+      uri: 'https://example.com/agendas/city-council-2026-09-16.pdf'
+      title: ''
+      options: {  }

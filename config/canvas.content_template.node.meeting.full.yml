@@ -9,6 +9,7 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.meeting.field_content
     - field.field.node.meeting.field_description
+    - field.field.node.meeting.field_meeting_location
     - filter.format.content_format
     - node.type.meeting
   module:
@@ -68,6 +69,18 @@ component_tree:
       text_size: heading-responsive-xl
       text_color: default
       align: left
+  7c3f2a10-5d4e-4b8a-9f61-2a8d0e1b4c37:
+    parent_uuid: 994be44f-de6a-46d8-ad32-69c494f40c2b
+    slot: main_slot
+    uuid: 7c3f2a10-5d4e-4b8a-9f61-2a8d0e1b4c37
+    component_id: sdc.mercury.text
+    component_version: 16c79c28a4108f9b
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:meeting␝field_meeting_location␞␟value'
+      text_size: normal
+      text_color: default
   de8cfbd1-3e9c-4f5a-a1b6-475bc5856ca8:
     parent_uuid: 994be44f-de6a-46d8-ad32-69c494f40c2b
     slot: main_slot

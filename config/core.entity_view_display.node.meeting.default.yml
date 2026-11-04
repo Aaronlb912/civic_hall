@@ -4,11 +4,14 @@ dependencies:
   config:
     - field.field.node.meeting.field_content
     - field.field.node.meeting.field_description
+    - field.field.node.meeting.field_meeting_agenda
     - field.field.node.meeting.field_meeting_date
+    - field.field.node.meeting.field_meeting_location
     - field.field.node.meeting.field_meeting_type
     - node.type.meeting
   module:
     - datetime
+    - link
     - options
     - text
     - user
@@ -39,6 +42,26 @@ content:
       format_type: medium
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_meeting_location:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_meeting_agenda:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_meeting_type:
     type: list_default

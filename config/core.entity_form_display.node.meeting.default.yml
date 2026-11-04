@@ -4,13 +4,16 @@ dependencies:
   config:
     - field.field.node.meeting.field_content
     - field.field.node.meeting.field_description
+    - field.field.node.meeting.field_meeting_agenda
     - field.field.node.meeting.field_meeting_date
+    - field.field.node.meeting.field_meeting_location
     - field.field.node.meeting.field_meeting_type
     - node.type.meeting
     - workflows.workflow.basic_editorial
   module:
     - content_moderation
     - datetime
+    - link
     - options
     - path
     - scheduler
@@ -32,9 +35,25 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_meeting_location:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_meeting_agenda:
+    type: link_default
+    weight: 9
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
   field_description:
     type: string_textarea
-    weight: 8
+    weight: 10
     region: content
     settings:
       rows: 5
@@ -42,7 +61,7 @@ content:
     third_party_settings: {  }
   field_content:
     type: text_textarea
-    weight: 9
+    weight: 11
     region: content
     settings:
       rows: 5

@@ -20,6 +20,8 @@ config:
     - field.storage.node.field_role
     - field.storage.node.field_meeting_date
     - field.storage.node.field_meeting_type
+    - field.storage.node.field_meeting_location
+    - field.storage.node.field_meeting_agenda
     - field.storage.node.field_task_link
     - field.storage.node.field_task_category
     - field.storage.node.field_alert_severity
