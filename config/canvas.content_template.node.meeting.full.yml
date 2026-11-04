@@ -78,7 +78,7 @@ component_tree:
     slot: main_slot
     uuid: 2e6b8f13-a4c9-4d07-b1e5-9c3a7d5f0b62
     component_id: sdc.civic_hall_theme.meeting_date
-    component_version: b2d9621906950d13
+    component_version: c8c57a41960a4cdd
     inputs:
       datetime:
         sourceType: entity-field

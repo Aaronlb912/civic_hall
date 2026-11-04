@@ -5,7 +5,7 @@ dependencies:
     - datetime
   theme:
     - civic_hall_theme
-active_version: b2d9621906950d13
+active_version: c8c57a41960a4cdd
 versioned_properties:
   active:
     settings:
